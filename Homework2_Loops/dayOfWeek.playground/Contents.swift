@@ -32,17 +32,17 @@ func getDayOfWeek(date: String) -> DaysOfWeek{
         fatalError("Неверный формат даты. Придерживайтесь формата ДД:ММ:ГГГГ")
     }
     
-    if day < 0 || day > 31 {
-        fatalError("День не может быть меньше 0 или больше 31")
+    if day < 1 || day > 31 {
+        fatalError("День не может быть меньше 1 или больше 31")
 
     }
     
-    if month < 0 || month > 12 {
-        fatalError("Месяц не может быть меньше 0 или больше 12")
+    if month < 1 || month > 12 {
+        fatalError("Месяц не может быть меньше 1 или больше 12")
     }
     
     if year < 1 {
-        fatalError("Год не может быть меньше 0")
+        fatalError("Год не может быть меньше 1")
     }
     
     //main algorithm
